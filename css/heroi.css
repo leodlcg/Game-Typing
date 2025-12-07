@@ -1,0 +1,102 @@
+#imgHeroiCacheAtacando {
+    background-image: url("");
+    position: absolute;
+    width: 1vw;   /* width e height devem ser sempre iguais!*/
+    height: 1vw; /* FAZER TUDO AGORA COM VW */
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 29vw; /*Fora da tela visivel do jogador! Mas ainda rodando*/
+    right: 15vw;
+}
+
+#imgHeroiCacheDerrotado {
+    background-image: url("");
+    position: absolute;
+    width: 1vw;   /* width e height devem ser sempre iguais!*/
+    height: 1vw; /* FAZER TUDO AGORA COM VW */
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 29vw; /*Fora da tela visivel do jogador! Mas ainda rodando*/
+    right: 13vw;
+}
+
+#imgHeroiHitBox {
+    position: absolute;
+    width: 12%; /*Tamanho do HitBox*/
+    bottom: 8%;
+    left: -3%;
+    z-index: 3;
+    display: block;
+}
+
+#imgHeroi {
+    background-image: url("");
+    position: absolute;
+    width: 11vw;   /* width e height devem ser sempre iguais!*/
+    height: 11vw; /* FAZER TUDO AGORA COM VW */
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0.5vw;;
+    right: 32.5vw;
+    z-index: 3;
+}
+
+#imgTarGet{
+    position: absolute;
+    width: 7%;
+    bottom: 15%;
+    left: 20%;
+    z-index: 3;
+    display: flex;
+}
+
+.VidaHeroi{
+    position: absolute;
+    width: 2vw;
+    right: 37vw;
+    z-index: 3;
+}
+
+#imgVidaHeroi01{
+    bottom: 10vw;
+    opacity: 0%;
+}
+
+#imgVidaHeroi02{
+    bottom: 11vw;
+    opacity: 0%;
+}
+
+#imgVidaHeroi03{
+    bottom: 12vw;
+    opacity: 0%;
+}
+
+#imgVidaHeroi04{
+    bottom: 13vw;
+    opacity: 0%;
+}
+
+#imgVidaHeroi05{
+    bottom: 14vw;
+    opacity: 0%;
+}
+
+#imgVidaHeroi06{
+    bottom: 15vw;
+    opacity: 0%;
+}
+
+#imgVidaHeroi07{
+    bottom: 17vw;
+    opacity: 0%;
+}
+
+
+#imgChao {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}

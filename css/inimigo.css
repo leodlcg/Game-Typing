@@ -1,0 +1,92 @@
+#imgInimigoCacheAtacando {
+    background-image: url("");
+    position: absolute;
+    width: 1vw;   /* width e height devem ser sempre iguais!*/
+    height: 1vw; /* FAZER TUDO AGORA COM VW */
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 29vw; /*Fora da tela visivel do jogador! Mas ainda rodando*/
+    right: 17vw;
+}
+
+#imgInimigoCacheDerrotado {
+    background-image: url("");
+    position: absolute;
+    width: 1vw;   /* width e height devem ser sempre iguais!*/
+    height: 1vw; /* FAZER TUDO AGORA COM VW */
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 29vw; /*Fora da tela visivel do jogador! Mas ainda rodando*/
+    right: 19vw;
+}
+
+#imgInimigo{
+    background-image: url("");
+    background-position: bottom center;
+    position: absolute;
+    width: 10vw;   /* width e height devem ser sempre iguais!*/
+    height: 10vw; /* FAZER TUDO AGORA COM VW */
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scaleX(-1); /*Espelha a Imagem */
+    bottom: 1.2vw;
+    right: 0.3vw;
+    z-index: 3;
+}
+
+.VidaInimigo{
+    position: absolute;
+    width: 5%;
+    right: 4vw;
+    z-index: 3;
+}
+
+#imgVidaInimigo1{
+    bottom: 9vw;
+    opacity: 0%;
+}
+
+#imgVidaInimigo2{
+    bottom: 10vw;
+    opacity: 0%;
+}
+
+#imgVidaInimigo3{
+    bottom: 11vw;
+    opacity: 0%;
+}
+
+#imgVidaInimigo4{
+    bottom: 13vw;
+    opacity: 0%;
+}
+
+#imgVidaInimigo5{
+    bottom: 14w;
+    opacity: 0%;
+}
+
+#imgVidaInimigo6{
+    bottom: 15vw;
+    opacity: 0%;
+}
+
+#imgVidaInimigo7{
+    bottom: 16vw;
+    opacity: 0%;
+}
+
+#imgVidaInimigo8{
+    bottom: 16vw;
+    opacity: 0%;
+}
+
+#imgVidaInimigo9{
+    bottom: 16vw;
+    opacity: 0%;
+}
+
+#imgVidaInimigo10{
+    bottom: 16vw;
+    opacity: 0%;
+}

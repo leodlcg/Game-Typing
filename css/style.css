@@ -1,0 +1,93 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imgs/cenarios/navegadorFundo/Arcade.jpeg");
+    background-size: cover;
+    overflow: hidden; /* Bloqueia o Scroll */
+}
+
+/* Gameloop visível */
+#GameBoard {
+     /* controla o layout dos filhos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* permite que filhos absolute usem este elemento como referência para se mover */
+    position: relative;
+     /* controla o tamanho da div */
+    width: 80%;
+    height: 111%;
+}
+
+/* TV sempre no centro */
+#imgArcade {
+    position: relative;
+    width: 70%;
+    height: 90%;
+    z-index: 5;
+}
+
+/* ============================================================================== */
+/* CENÁRIO DENTRO DA TV*/
+#Game {
+    position: absolute;
+    width: 52%; /*Tamanho exato dentro do Arcade! */
+    height: 54.4%;
+    top: 21.9%;
+    right: 25%; /*Tamanho exato dentro do Arcade! */
+
+}
+
+#imgChao {
+    background-image: url("");
+    background-size: cover;
+}
+
+#imgPlanoFundo {
+    background-image: url("");
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#ButtonPressStart{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 6;
+    opacity: 0%; /*Nao aparece, mas funciona*/
+}
+
+#imgPlanoFundoLoading {
+    background-image: url("../imgs/cenarios/telaLoading/PressStart.gif");
+    background-size: 41.5vw;
+    background-position-x: -0.5vw;
+    background-position-y: -0.5vw;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 6;
+}
+
+#imgPlanoFundoDoLoading {
+    background-image: url("");
+    background-color: black;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 101%;
+    height: 100%;
+    display: flex;
+    z-index: 5;
+}
+/* ============================================================================== */

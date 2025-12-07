@@ -1,0 +1,88 @@
+#imgTecla0{
+    background-image: url(""); /*Imagem que aparece para o jogador! */
+    position: absolute;
+    width: 5%; /*Tamanho do HitBox*/
+    background-size: 110%;
+    bottom: 15%;
+    left: 85%;
+    z-index: 3;
+    display: none;
+}
+
+#imgTecla1{
+    background-image: url(""); /*Imagem que aparece para o jogador! */
+    position: absolute;
+    width: 5%; /*Tamanho do HitBox*/
+    background-size: 110%;
+    bottom: 15%;
+    left: 85%;
+    z-index: 3;
+    display: none;
+}
+
+#imgTecla2{
+    background-image: url(""); /*Imagem que aparece para o jogador! */
+    position: absolute;
+    width: 5%; /*Tamanho do HitBox*/
+    background-size: 110%;
+    bottom: 15%;
+    left: 85%;
+    z-index: 3;
+    display: none;
+}
+
+#imgTecla3{
+    background-image: url(""); /*Imagem que aparece para o jogador! */
+    position: absolute;
+    width: 5%; /*Tamanho do HitBox*/
+    background-size: 110%;
+    bottom: 15%;
+    left: 85%;
+    z-index: 3;
+    display: none;
+}
+
+#imgTecla4{
+    background-image: url(""); /*Imagem que aparece para o jogador! */
+    position: absolute;
+    width: 5%; /*Tamanho do HitBox*/
+    background-size: 110%;
+    bottom: 15%;
+    left: 85%;
+    z-index: 3;
+    display: none;
+}
+
+#imgTecla5{
+    background-image: url(""); /*Imagem que aparece para o jogador! */
+    position: absolute;
+    width: 5%; /*Tamanho do HitBox*/
+    background-size: 110%;
+    bottom: 15%;
+    left: 85%;
+    z-index: 3;
+    display: none;
+}
+
+#imgTeclaMorteHeroi{
+    background-image: url("");
+    position: absolute;
+    width: 5%; /*Tamanho do HitBox*/
+    background-size: 110%;
+    bottom: 12%;
+    left: 8%;
+    z-index: 3;
+    display: none;
+}
+
+#imgTeclaMorteTarGet{
+    background-image: url("");
+    position: absolute;
+    width: 5%; /*Tamanho do HitBox*/
+    background-size: 110%;
+    bottom: 15%;
+    left: 20%;
+    z-index: 3;
+    display: none;
+}
+
