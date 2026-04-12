@@ -1,78 +1,233 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escalonamento -->
-    <title>GameArcade</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/inimigo.css">
-    <link rel="stylesheet" href="css/teclas.css">
-    <link rel="stylesheet" href="css/teclasAnimacaoFacil.css">
-    <link rel="stylesheet" href="css/teclasAnimacaoMedio.css">
-    <link rel="stylesheet" href="css/teclasAnimacaoDificil.css">
-    <link rel="stylesheet" href="css/teclasAnimacaoBoss.css">
-    <link rel="stylesheet" href="css/heroi.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="css/menu-style.css">
+    <link rel="stylesheet" href="css/sobre-style.css">
+    <link rel="stylesheet" href="css/redesSociais-style.css">
+    <link rel="stylesheet" href="css/habilidades-style.css">
+    <link rel="stylesheet" href="css/projetos-style.css">
+    <link rel="stylesheet" href="css/rodape-style.css">
+    <link rel="stylesheet" href="css/tabela-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Matemasie&display=swap" rel="stylesheet">
 </head>
-<script src="js/Inimigo.js"></script>
-<script src="js/InimigoFacil.js"></script>
-<script src="js/InimigoMedio.js"></script>
-<script src="js/InimigoDificil.js"></script>
-<script src="js/InimigoBoss.js"></script>
-<script src="js/Heroi.js"></script>
-<script src="js/Tecla.js"></script>
-<script src="js/main.js"></script>
 
 <body>
-    <div id = "GameBoard">
-        <img src="imgs/cenarios/quadro/Arcade.png" id = "imgArcade">
-        <div id="Game">
-                <img src="imgs/cenarios/planoFundo/HitBoxPlanoFundo.png" id = "imgPlanoFundo">
-                <img src="imgs/cenarios/planoFundo/HitBoxPlanoFundo.png" id = "imgPlanoFundoDoLoading">
-                <img src="imgs/cenarios/planoFundo/HitBoxPlanoFundo.png" id = "imgPlanoFundoLoading">
-                <button type= "button" id = "ButtonPressStart"></button>
-                <script>document.getElementById("ButtonPressStart").addEventListener("click", () => ButtonPressStart());</script>
 
-                <img src="imgs/herois/Target-de-Ataque-e-Defesa.png" id = "imgTarGet">
-                <img src="imgs/herois/HitBoxHerois.png" id = "imgHeroiCacheAtacando">
-                <img src="imgs/herois/HitBoxHerois.png" id = "imgHeroiCacheDerrotado">
-                <img src="imgs/herois/HitBoxHerois.png" id = "imgHeroiHitBox">
-                <img src="imgs/herois/Guerreiro/HitBoxHeroisGuerreiro.png" id = "imgHeroi"> <!--"src apenas com o HitBox do heroi, apenas o png vazio" -->
-                    <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaHeroi01" class="VidaHeroi">
-                        <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaHeroi02" class="VidaHeroi">
-                            <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaHeroi03" class="VidaHeroi">
-                                <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaHeroi04" class="VidaHeroi">
-                                    <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaHeroi05" class="VidaHeroi">
-                                        <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaHeroi06" class="VidaHeroi">
-                                            <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaHeroi07" class="VidaHeroi">
+    <header id="menu">
+        <nav class="menuNav">
 
-                <img src="imgs/inimigos/Facil/HitBoxInimigo.png" id = "imgInimigo"> <!--"src apenas com o HitBox do heroi, apenas o png vazio" -->
-                <img src="imgs/inimigos/Facil/HitBoxInimigo.png" id = "imgInimigoCacheAtacando">
-                <img src="imgs/inimigos/Facil/HitBoxInimigo.png" id = "imgInimigoCacheDerrotado">
-                    <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaInimigo1" class="VidaInimigo">
-                        <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaInimigo2" class="VidaInimigo">
-                            <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaInimigo3" class="VidaInimigo">
-                                <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaInimigo4" class="VidaInimigo">
-                                    <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaInimigo5" class="VidaInimigo">
-                                        <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaInimigo6" class="VidaInimigo">
-                                            <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaInimigo7" class="VidaInimigo">
-                                                <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaInimigo8" class="VidaInimigo">
-                                                    <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaInimigo9" class="VidaInimigo">
-                                                        <img src="imgs/herois/CoracaoCheio.png" id = "imgVidaInimigo10" class="VidaInimigo">
+            <a class="linkMenu">Sobre mim</a>
+            <a class="linkMenu">Habilidades</a>
+            <a class="linkMenu">Projetos</a>
 
-                <img src="imgs/teclas/TeclaHitBox.png" id = "imgTecla0">
-                <img src="imgs/teclas/TeclaHitBox.png" id = "imgTecla1">
-                <img src="imgs/teclas/TeclaHitBox.png" id = "imgTecla2">
-                <img src="imgs/teclas/TeclaHitBox.png" id = "imgTecla3">
-                <img src="imgs/teclas/TeclaHitBox.png" id = "imgTecla4">
-                <img src="imgs/teclas/TeclaHitBox.png" id = "imgTecla5">
-                <img src="imgs/teclas/TeclaHitBox.png" id = "imgTeclaMorteHeroi">
-                <img src="imgs/teclas/TeclaHitBox.png" id = "imgTeclaMorteTarGet">
-                        
-                        <!--"src apenas com o HitBox do heroi, apenas o png vazio" -->
+        </nav>
 
-                <img src="imgs/cenarios/chao/ChaoHitBox.png" id = "imgChao">
+    </header>
+
+    <section id="sobre">
+
+        <div id="divSobreImg">
+            <img id="imgSobre" src="imgs/moldura/molduraPixel.png">
+            <img id="teste" src=""></imgid>
+        </div>
+
+
+        <div id="divSobreText">
+            <h1 id="tituloSobre">Leonardo Domingues</h1>
+            <p id="textoSobre">Jovem estudante movido pela curiosidade e vontade de aprender. Com disposição para novos desafios, ele constrói seu caminho com dedicação, buscando sempre crescer tanto no conhecimento quanto como pessoa.</p>
+        </div>
+
+
+    </section>
+
+    <section id="redesSociais">
+
+        <nav class="menuRedesSociais">
+
+            <div class="linkDiv linkedin">
+                <img class="linkImgPreto" src="/imgs/menu/LinkedinPreto.webp" />
+                <img class="linkImgBranco" src="/imgs/menu/LinkedinBranco.webp"/>
+            </div>
+
+            <div class="linkDiv github">
+                <img class="linkImgPreto" src="/imgs/menu/GithubPreto.webp"/>
+                <img class="linkImgBranco" src="/imgs/menu/GithubBranco.webp"/>
+            </div>
+            
+        </nav>
+
+    </section>
+
+
+    <!--  Parte das habilidades: -->
+    <section id="habilidadesSection">
+    <h1 id="topicoHabilidades">Skills</h1>
+        <div class="habilidadesDiv">
+
+            <div class="retanguloFundoCor">
+                <div class="conteudoBox">
+                    <div class="miniBoxCima"></div>
+                    <div class="imgConteudo">
+                        <img class="imgHabilidades" src="imgs/habilidades/HTML.webp">
+                        <h2>HTML</h2>
+                    </div>
+                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste</p>
+                    <a href="#">Saiba mais</a>
+                    <div class="miniBoxBaixo"></div>
+                </div>
+            </div>
+
+            <div class="retanguloFundoCor">
+                <div class="conteudoBox">
+                    <div class="miniBoxCima"></div>
+                    <div class="imgConteudo">
+                        <img class="imgHabilidades" src="imgs/habilidades/JavaScript.webp">
+                        <h2>JavaScript</h2>
+                    </div>
+                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste</p>
+                    <a href="#">Saiba mais</a>
+                    <div class="miniBoxBaixo"></div>
+                </div>
+            </div>
+
+            <div class="retanguloFundoCor">
+                <div class="conteudoBox">
+                    <div class="miniBoxCima"></div>
+                    <div class="imgConteudo">
+                        <img class="imgHabilidades" src="imgs/habilidades/CSS.webp">
+                        <h2>CSS</h2>
+                    </div>
+                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste.</p>
+                    <a href="#">Saiba mais</a>
+                    <div class="miniBoxBaixo"></div>
+                </div>
+            </div>
+
+            <div class="retanguloFundoCor">
+                <div class="conteudoBox">
+                    <div class="miniBoxCima"></div>
+                    <div class="imgConteudo">
+                        <img class="imgHabilidades" src="imgs/habilidades/Java.webp">
+                        <h2>Java</h2>
+                    </div>
+                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste.</p>
+                    <a href="#">Saiba mais</a>
+                    <div class="miniBoxBaixo"></div>
+                </div>
+            </div>
+
+            <div class="retanguloFundoCor">
+                <div class="conteudoBox">
+                    <div class="miniBoxCima"></div>
+                    <div class="imgConteudo">
+                        <img class="imgHabilidades" src="imgs/habilidades/Spring.webp">
+                        <h2>Spring</h2>
+                    </div>
+                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste.</p>
+                    <a href="#">Saiba mais</a>
+                    <div class="miniBoxBaixo"></div>
+                </div>
+            </div>
+
+            <div class="retanguloFundoCor">
+                <div class="conteudoBox">
+                    <div class="miniBoxCima"></div>
+                    <div class="imgConteudo">
+                        <img class="imgHabilidades" src="imgs/habilidades/React.webp">
+                        <h2>React</h2>
+                    </div>
+                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste.</p>
+                    <a href="#">Saiba mais</a>
+                    <div class="miniBoxBaixo"></div>
+                </div>
+            </div>
 
         </div>
-    </div>
+    </section>
+
+
+
+
+    <!--  Parte dos Projetos: -->
+    <section id="projetos">
+        <h1 id="topicoProjetos">Projetos</h1>
+        <div id="divProjetos">
+            <button class="original-button" onclick="alert('Hello!')" >Button</button>
+            <button class="original-button" onclick="alert('Hello!')">Button</button>
+            <button class="original-button" onclick="alert('Hello!')">Button</button>
+            <button class="original-button" onclick="alert('Hello!')">Button</button>
+            <button class="original-button" onclick="alert('Hello!')">Button</button>
+        </div>
+
+
+        <iframe id="projetosIframe" src="https://leodlcg.github.io/Game-Typing/" title="teste"></iframe>
+
+
+
+    </section>
+
+
+    <section id="tabela">
+
+        <div id="divTabela">
+
+            <table id="experienciaTabela">
+
+                <thead>
+                    <tr>
+                        <th>Cargo</th>
+                        <th>Empresa</th>
+                        <th>Experiência</th>
+
+                    </tr>
+
+
+                </thead>
+
+                <tbody> 
+                    <tr>
+                        <td>Genio das matematicas</td>
+                        <td>Escola fodona</td>
+                        <td>7 anos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Genio do portugues</td>\
+                        <td>Escola betinha</td>
+                        <td>1 anos</td>
+                    </tr>
+                    <tr>
+                        <td>Genio do historia</td>
+                        <td>Escola alfa</td>
+                        <td>444 anos</td>
+                    </tr>
+
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <footer id="rodape"> 
+
+
+
+        <p id="textRodape">Aqui sera o rodape</p>
+
+    </footer>
+
 </body>
 </html>

@@ -1,0 +1,57 @@
+#tabela{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+#divTabela{
+    border-radius: 12px;
+    overflow-x: auto;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 800px;
+    -webkit-overflow-scrolling: touch;
+}
+
+#experienciaTabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+#experienciaTabela thead tr {
+  background: #1a1a2e;
+  color: #fff;
+}
+
+#experienciaTabela th {
+  padding: 14px 20px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+#experienciaTabela td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #e8e8e8;
+  color: #333;
+}
+
+#experienciaTabela tbody tr:last-child td {
+  border-bottom: none;
+}
+
+#experienciaTabela tbody tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+#experienciaTabela tbody tr:hover td {
+  background: #f0f4ff;
+}
