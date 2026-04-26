@@ -1,0 +1,62 @@
+#sobreSection{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 200px;
+    gap: clamp(0px, 2vw, 30px);
+    scroll-margin-top: 200px;
+
+}
+
+#divSobreImg{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: clamp(200px, 40vw, 450px);
+
+}
+
+#imgSobre{
+
+    width: clamp(0px, 60vw, 400px);
+    height: auto;
+
+}
+
+#divSobreText{
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: clamp(250px, 60vw, 550px);
+
+}
+
+.tituloSobre{
+
+    font-size: clamp(0px, 17vmin, 50px);
+    
+}
+
+@media (max-width: 948px){ /* Tela pequena */
+    #sobre{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 120px;
+    }
+    #divSobreImg{
+        width: 60vw;
+    }
+    #divSobreText{
+        align-items: center;
+        text-align: center;
+        width: 70vw;
+    }
+}

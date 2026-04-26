@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
+    <title>Leonardo Domingues — Dev Full Stack</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu-style.css">
     <link rel="stylesheet" href="css/sobre-style.css">
     <link rel="stylesheet" href="css/redesSociais-style.css">
-    <link rel="stylesheet" href="css/habilidades-style.css">
+    <link rel="stylesheet" href="css/stack-style.css">
     <link rel="stylesheet" href="css/projetos-style.css">
+    <link rel="stylesheet" href="css/skills-style.css">
+    <link rel="stylesheet" href="css/experiencias-style.css">
     <link rel="stylesheet" href="css/rodape-style.css">
-    <link rel="stylesheet" href="css/tabela-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Matemasie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Matemasie&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,63 +23,63 @@
     <header id="menu">
         <nav class="menuNav">
 
-            <a class="linkMenu">Sobre mim</a>
-            <a class="linkMenu">Habilidades</a>
-            <a class="linkMenu">Projetos</a>
+            <a class="linkMenu" href="#sobreSection">Sobre</a>
+            <a class="linkMenu" href="#stackSection">Stack</a>
+            <a class="linkMenu" href="#projetosSection">Projetos</a>
+            <a class="linkMenu" href="#skillsSection">Skills</a>
+            <a class="linkMenu" href="#experienciasSection">Experiências</a>
 
         </nav>
-
     </header>
 
-    <section id="sobre">
+    <section id="sobreSection">
 
         <div id="divSobreImg">
-            <img id="imgSobre" src="imgs/moldura/molduraPixel.png">
-            <img id="teste" src=""></imgid>
+            <img id="imgSobre" src="imgs/moldura/molduraPixel.png" alt="Moldura em pixel da foto de Leonardo">
         </div>
 
 
         <div id="divSobreText">
-            <h1 id="tituloSobre">Leonardo Domingues</h1>
-            <p id="textoSobre">Jovem estudante movido pela curiosidade e vontade de aprender. Com disposição para novos desafios, ele constrói seu caminho com dedicação, buscando sempre crescer tanto no conhecimento quanto como pessoa.</p>
+            <h1 class="textTitulos tituloSobre">Leonardo Domingues</h1>
+            <p class="textDescricoes">Jovem estudante movido pela curiosidade e vontade de aprender. Com disposição para novos desafios, ele constrói seu caminho com dedicação, buscando sempre crescer tanto no conhecimento quanto como pessoa.</p>
         </div>
-
-
+    
     </section>
 
     <section id="redesSociais">
-
         <nav class="menuRedesSociais">
 
-            <div class="linkDiv linkedin">
-                <img class="linkImgPreto" src="/imgs/menu/LinkedinPreto.webp" />
-                <img class="linkImgBranco" src="/imgs/menu/LinkedinBranco.webp"/>
-            </div>
+            <a class="linkDiv linkedin" href="https://www.linkedin.com/in/leonardo-domingues-carvalho/" target="_blank">
+                <img class="linkImgPreto" src="imgs/menu/LinkedinPreto.webp" alt=" Imagem da empresa LinkedIn com fundo branco e logo preta" />
+                <img class="linkImgBranco" src="imgs/menu/LinkedinBranco.webp" alt="Imagem da empresa LinkedIn com fundo preto e logo branca" />
+            </a>
 
-            <div class="linkDiv github">
-                <img class="linkImgPreto" src="/imgs/menu/GithubPreto.webp"/>
-                <img class="linkImgBranco" src="/imgs/menu/GithubBranco.webp"/>
-            </div>
+            <a class="linkDiv github" href="https://github.com/leodlcg" target="_blank">
+                <img class="linkImgPreto" src="imgs/menu/GithubPreto.webp" alt=" Imagem da empresa GitHub com fundo branco e logo preta" />
+                <img class="linkImgBranco" src="imgs/menu/GithubBranco.webp" alt="Imagem da empresa GitHub com fundo preto e logo branca" />
+            </a>
             
         </nav>
-
     </section>
 
+    <div class="divSeparadores">
+        <img class="imgSeparadore" src="imgs/separadores/SeparadorRoxoRosa.webp">
+    </div>
 
     <!--  Parte das habilidades: -->
-    <section id="habilidadesSection">
-    <h1 id="topicoHabilidades">Skills</h1>
-        <div class="habilidadesDiv">
+    <section id="stackSection">
+    <h1 class="textTitulos">Stack</h1>
+        <div class="stacksDiv">
 
             <div class="retanguloFundoCor">
                 <div class="conteudoBox">
                     <div class="miniBoxCima"></div>
                     <div class="imgConteudo">
-                        <img class="imgHabilidades" src="imgs/habilidades/HTML.webp">
-                        <h2>HTML</h2>
+                        <img class="imgStack" src="imgs/stack/HTML.webp" alt="Imagem da linguagem de marcação HTML">
+                        <h2 class="tituloStack">HTML</h2>
                     </div>
-                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste</p>
-                    <a href="#">Saiba mais</a>
+                    <p class="textDescricoes">Interfaces responsivas com HTML5, otimizadas para qualidade, experiência do usuário e visibilidade na web.</p>
+                    <a class="textBotoes" href="#">Saiba mais</a>
                     <div class="miniBoxBaixo"></div>
                 </div>
             </div>
@@ -89,11 +88,11 @@
                 <div class="conteudoBox">
                     <div class="miniBoxCima"></div>
                     <div class="imgConteudo">
-                        <img class="imgHabilidades" src="imgs/habilidades/JavaScript.webp">
-                        <h2>JavaScript</h2>
+                        <img class="imgStack" src="imgs/stack/JavaScript.webp" alt="Imagem da linguagem de programação JavaScript">
+                        <h2 class="tituloStack">JavaScript</h2>
                     </div>
-                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste</p>
-                    <a href="#">Saiba mais</a>
+                    <p class="textDescricoes">JavaScript para interfaces dinâmicas, validações, consumo de APIs e animações com foco na experiência do usuário.</p>
+                    <a class="textBotoes" href="#">Saiba mais</a>
                     <div class="miniBoxBaixo"></div>
                 </div>
             </div>
@@ -102,11 +101,11 @@
                 <div class="conteudoBox">
                     <div class="miniBoxCima"></div>
                     <div class="imgConteudo">
-                        <img class="imgHabilidades" src="imgs/habilidades/CSS.webp">
-                        <h2>CSS</h2>
+                        <img class="imgStack" src="imgs/stack/CSS.webp" alt="Imagem da linguagem de estilo CSS">
+                        <h2 class="tituloStack">CSS</h2>
                     </div>
-                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste.</p>
-                    <a href="#">Saiba mais</a>
+                    <p class="textDescricoes">Estilização moderna e responsiva com CSS3, criando layouts fluidos, animações e interfaces adaptáveis para qualquer dispositivo.</p>
+                    <a class="textBotoes" href="#">Saiba mais</a>
                     <div class="miniBoxBaixo"></div>
                 </div>
             </div>
@@ -115,11 +114,11 @@
                 <div class="conteudoBox">
                     <div class="miniBoxCima"></div>
                     <div class="imgConteudo">
-                        <img class="imgHabilidades" src="imgs/habilidades/Java.webp">
-                        <h2>Java</h2>
+                        <img class="imgStack" src="imgs/stack/Java.webp" alt="Imagem da linguagem de programação Java">
+                        <h2 class="tituloStack">Java</h2>
                     </div>
-                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste.</p>
-                    <a href="#">Saiba mais</a>
+                    <p class="textDescricoes">Desenvolvimento back-end com Java, criando APIs, gerenciando banco de dados e garantindo qualidade com testes automatizados.</p>
+                    <a class="textBotoes" href="#">Saiba mais</a>
                     <div class="miniBoxBaixo"></div>
                 </div>
             </div>
@@ -128,11 +127,11 @@
                 <div class="conteudoBox">
                     <div class="miniBoxCima"></div>
                     <div class="imgConteudo">
-                        <img class="imgHabilidades" src="imgs/habilidades/Spring.webp">
-                        <h2>Spring</h2>
+                        <img class="imgStack" src="imgs/stack/Spring.webp" alt="Imagem do framework Spring">
+                        <h2 class="tituloStack">Spring</h2>
                     </div>
-                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste.</p>
-                    <a href="#">Saiba mais</a>
+                    <p class="textDescricoes">Desenvolvimento de aplicações back-end com Spring Boot, garantindo segurança e integração com banco de dados.</p>
+                    <a class="textBotoes" href="#">Saiba mais</a>
                     <div class="miniBoxBaixo"></div>
                 </div>
             </div>
@@ -141,11 +140,11 @@
                 <div class="conteudoBox">
                     <div class="miniBoxCima"></div>
                     <div class="imgConteudo">
-                        <img class="imgHabilidades" src="imgs/habilidades/React.webp">
-                        <h2>React</h2>
+                        <img class="imgStack" src="imgs/stack/React.webp" alt="Imagem da biblioteca React">
+                        <h2 class="tituloStack">React</h2>
                     </div>
-                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste.</p>
-                    <a href="#">Saiba mais</a>
+                    <p class="textDescricoes">Desenvolvimento de interfaces modernas com React, utilizando componentes reutilizáveis, navegação entre páginas e consumo de APIs.</p>
+                    <a class="textBotoes" href="#">Saiba mais</a>
                     <div class="miniBoxBaixo"></div>
                 </div>
             </div>
@@ -153,81 +152,382 @@
         </div>
     </section>
 
-
-
+    <div class="divSeparadores">
+        <img class="imgSeparadore" src="imgs/separadores/SeparadorRosaAzul.webp">
+    </div>
 
     <!--  Parte dos Projetos: -->
-    <section id="projetos">
-        <h1 id="topicoProjetos">Projetos</h1>
-        <div id="divProjetos">
-            <button class="original-button" onclick="alert('Hello!')" >Button</button>
-            <button class="original-button" onclick="alert('Hello!')">Button</button>
-            <button class="original-button" onclick="alert('Hello!')">Button</button>
-            <button class="original-button" onclick="alert('Hello!')">Button</button>
-            <button class="original-button" onclick="alert('Hello!')">Button</button>
-        </div>
+    <section id="projetosSection">
+    <h1 class="textTitulos">Projetos</h1>
 
-
-        <iframe id="projetosIframe" src="https://leodlcg.github.io/Game-Typing/" title="teste"></iframe>
+        <div class="divProjetos">
 
 
 
-    </section>
 
+            <div class="container">
+                <a href="https://www.facebook.com/groups/ElzeroWebSchool/" target="_blank"><img src="https://static.tumblr.com/f9f4253d58950721ab4e47214ebcac39/asrymop/9P4nnlfhb/tumblr_static_tumblr_static_ck5wlz6qil4ccsgw04cwwocsw_640.gif" alt="Omar"> </a>
+                <div class="box-text">
+                <h1>Elzero Web School</h1>
+                <p>It is a long established fact that a reader will be distracted bddddddddddddddddddddddddddddddy the readable content of a page when looking at its layout. 
+                </div>
+            </div>
 
-    <section id="tabela">
+            <div class="container">
+                <a href="https://www.facebook.com/groups/ElzeroWebSchool/" target="_blank"><img src="https://static.tumblr.com/f9f4253d58950721ab4e47214ebcac39/asrymop/9P4nnlfhb/tumblr_static_tumblr_static_ck5wlz6qil4ccsgw04cwwocsw_640.gif" alt="Omar"> </a>
+                <div class="box-text">
+                <h1>Elzero Web School</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                </div>
+            </div>
 
-        <div id="divTabela">
+            <div class="container">
+                <a href="https://www.facebook.com/groups/ElzeroWebSchool/" target="_blank"><img src="https://static.tumblr.com/f9f4253d58950721ab4e47214ebcac39/asrymop/9P4nnlfhb/tumblr_static_tumblr_static_ck5wlz6qil4ccsgw04cwwocsw_640.gif" alt="Omar"> </a>
+                <div class="box-text">
+                <h1>Elzero Web School</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                </div>
+            </div>
 
-            <table id="experienciaTabela">
-
-                <thead>
-                    <tr>
-                        <th>Cargo</th>
-                        <th>Empresa</th>
-                        <th>Experiência</th>
-
-                    </tr>
-
-
-                </thead>
-
-                <tbody> 
-                    <tr>
-                        <td>Genio das matematicas</td>
-                        <td>Escola fodona</td>
-                        <td>7 anos</td>
-                    </tr>
-
-                    <tr>
-                        <td>Genio do portugues</td>\
-                        <td>Escola betinha</td>
-                        <td>1 anos</td>
-                    </tr>
-                    <tr>
-                        <td>Genio do historia</td>
-                        <td>Escola alfa</td>
-                        <td>444 anos</td>
-                    </tr>
-
-
-
-                </tbody>
-
-            </table>
+            <div class="container">
+                <a href="https://www.facebook.com/groups/ElzeroWebSchool/" target="_blank"><img src="https://static.tumblr.com/f9f4253d58950721ab4e47214ebcac39/asrymop/9P4nnlfhb/tumblr_static_tumblr_static_ck5wlz6qil4ccsgw04cwwocsw_640.gif" alt="Omar"> </a>
+                <div class="box-text">
+                <h1>Elzero Web School</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                </div>
+            </div>
 
         </div>
 
     </section>
 
+    <div class="divSeparadores">
+        <img class="imgSeparadore" src="imgs/separadores/SeparadorAzulVerde.webp">
+    </div>
+
+    <section id="skillsSection">
+    <h1 class="textTitulos">Skills</h1>
+
+        <div class="divSkills">
+
+            <div class="terminal">
+            
+            <div class="titlebar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="label">Minhas Skills — 80×24</span>
+            </div>
+            
+            <div class="prompt-line">
+                <span class="dollar">C:</span>
+                <span class="cmd">\Users</span>
+                <span class="flag1">\leonardo</span>
+                <span class="flag2">\clique em qualquer palavra:</span>
+                <span class="cursor">▋</span>
+            </div>
+            
+            <div class="status-line">
+                <span class="ok">✓</span> carregando léxico...&nbsp;&nbsp;
+                <span class="ok">✓</span> calculando frequências...&nbsp;&nbsp;
+                <span class="ok">✓</span> posicionando tokens...
+            </div>
+            
+            <!-- ══ Nuvem SVG ══ -->
+            <svg class="cloud-svg" viewBox="0 0 680 360"
+                role="img" aria-label="Nuvem de palavras tech interativa">
+                <title>Tech Word Cloud</title>
+                <desc>Palavras de tecnologia clicáveis que exibem detalhes ao serem selecionadas.</desc>
+            
+                <!-- Cada <text> tem id único, cor e delay de animação -->
+            <g class="word"><text x="340" y="158" font-size="54" fill="#E53935"  onclick="open('java')">Java</text></g>
+            <g class="word"><text x="162" y="132" font-size="36" fill="#FF6D00" onclick="open('html')">HTML</text></g>
+            <g class="word"><text x="531" y="126" font-size="32" fill="#b48eff" onclick="open('css')">CSS</text></g>
+            <g class="word"><text x="340" y="88" font-size="26" fill="#febc2e" onclick="open('js')">JavaScript</text></g>
+            <g class="word"><text x="340" y="228" font-size="26" fill="#4dff03" onclick="open('spring')">Spring</text></g>
+            <g class="word"><text x="112" y="210" font-size="22" fill="#4a9eff" onclick="open('react')">React</text></g>
+            <g class="word"><text x="556" y="205" font-size="22" fill="#28c840" onclick="open('reactnative')">ReactNative</text></g>
+            <g class="word"><text x="173" y="272" font-size="20" fill="#b48eff" onclick="open('backend')">backend</text></g>
+            <g class="word"><text x="505" y="272" font-size="20" fill="#febc2e" onclick="open('frontend')">frontend</text></g>
+            <g class="word"><text x="340" y="58" font-size="16" fill="#4ad9b4" onclick="open('infra')">infraestrutura</text></g>
+            <g class="word"><text x="340" y="302" font-size="16" fill="#4ad9b4" onclick="open('aprendizado')">aprendizado</text></g>
+            <g class="word"><text x="66" y="163" font-size="15" fill="#ff6e6e" onclick="open('loop')">loop</text></g>
+            <g class="word"><text x="611" y="163" font-size="15" fill="#4a9eff" onclick="open('async')">async</text></g>
+            <g class="word"><text x="84" y="298" font-size="14" fill="#28c840" onclick="open('cloud')">cloud</text></g>
+            <g class="word"><text x="596" y="298" font-size="14" fill="#b48eff" onclick="open('server')">server</text></g>
+            <g class="word"><text x="102" y="74" font-size="13" fill="#febc2e" onclick="open('pipeline')">pipeline</text></g>
+            <g class="word"><text x="578" y="74" font-size="13" fill="#ff6e6e" onclick="open('kernel')">kernel</text></g>
+            <g class="word"><text x="258" y="330" font-size="13" fill="#4a9eff" onclick="open('runtime')">runtime</text></g>
+            <g class="word"><text x="424" y="330" font-size="13" fill="#28c840" onclick="open('docker')">docker</text></g>
+            <g class="word"><text x="48" y="332" font-size="12" fill="#4ad9b4" onclick="open('node')">node</text></g>
+            <g class="word"><text x="630" y="332" font-size="12" fill="#4ad9b4" onclick="open('query')">query</text></g>
+            <g class="word"><text x="196" y="40" font-size="12" fill="#b48eff" onclick="open('token')">token</text></g>
+            <g class="word"><text x="487" y="40" font-size="12" fill="#ff6e6e" onclick="open('stack')">stack</text></g>
+            <g class="word"><text x="54" y="42" font-size="11" fill="#febc2e" onclick="open('cache')">cache</text></g>
+            <g class="word"><text x="625" y="42" font-size="11" fill="#28c840" onclick="open('proxy')">proxy</text></g>
+            <g class="word"><text x="340" y="348" font-size="11" fill="#4a9eff" onclick="open('microservices')">microservices</text></g>
+            </svg>
+            
+            <div class="footer">
+                <span><span style="color:#28c840;">✓</span> renderização concluída &nbsp;<span style="color:#febc2e;">27 tokens</span>&nbsp; — clique em qualquer palavra para saber mais</span>
+                <span class="online">● online</span>
+            </div>
+            
+            </div>
+            
+            <!-- ══ Modal ══ -->
+            <div class="modal-overlay" id="modal-overlay" onclick="closeOnOverlay(event)">
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                <span class="tag" id="modal-tag">// info</span>
+                <button class="close-btn" onclick="closeModal()">✕</button>
+                </div>
+                <div class="modal-body">
+                <div class="modal-id" id="modal-id">ID: #w-</div>
+                <div class="modal-title" id="modal-title">—</div>
+                <div class="modal-desc"  id="modal-desc">—</div>
+                <div class="modal-tags"  id="modal-tags"></div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="divSeparadores">
+        <img class="imgSeparadore" src="imgs/separadores/SeparadorAzul.webp">
+    </div>
+
+
+    <section id="experienciasSection">
+    <h1 class="textTitulos">Experiências</h1>
+
+        <div id="divExperiencias01" class="divExperiencias">
+
+            <figure class="figureMolduraImg">
+                <img id="imgExperiencias01" class="imgExperiencias" src="imgs/experiencias/Minecraft.webp" alt="Teste">
+                <h1 class="tituloImg">Minecraft - Server <br> 2016 - 2017</h1>
+            </figure>
+
+            <img id="flecha01" class="flechas" src="imgs/flechas/Flecha01.webp">
+
+            <div id="divExperienciaText01" class="divExperienciaText">
+                <p id="Experiencia01" class="textDescricoesExperiencias">Como muitos amigos programadores, meu primeiro contato com a programação foi através do Minecraft. 
+                                                                        Aos 14 - 15 anos decidi que queria ter um servidor público de KitPvP(mini-game) e foi aí que descobri o mundo dos plugins!
+                                                                        Com eles vieram o Java 7, arquitetura, servidores, sistemas distribuídos, padrões de projeto e principalmente o open-source. 
+                </p>
+            </div>
+            
+        </div>
+
+        <div id="divExperiencias01-01" class="divExperiencias">
+
+            <img id="imgEstrela01" class="estrelas" src="imgs/experiencias/Estrelas.png">
+            <figure class="figureMolduraImg">
+                <img id="imgExperiencias01-01" class="imgExperiencias" src="imgs/experiencias/SeverFull.png" alt="Teste">
+                <h1 class="tituloImg">Server +200 Jogadores</h1>
+            </figure>
+            <figure class="figureMolduraImg">
+                <img id="imgExperiencias01-02" class="imgExperiencias" src="imgs/experiencias/MelhorServidor.png" alt="Teste">
+                <h1 class="tituloImg">Feedback</h1>
+            </figure>
+            <img id="imgEstrela02" class="estrelas" src="imgs/experiencias/Estrelas.png">
+            
+        </div>
+
+        <div id="divExperiencias02"class="divExperiencias">
+
+            <div class="divFiguras">
+                <figure id="figureMolduraImg01" class="figureMolduraImg">
+                    <img id="imgExperiencias01" class="imgExperiencias" src="imgs/experiencias/HardwareCotemig.webp" alt="Teste">
+                    <h1 class="tituloImg">Hardware</h1>
+                </figure>
+                <figure id="figureMolduraImg02" class="figureMolduraImg">
+                    <img id="imgExperiencias02" class="imgExperiencias" src="imgs/experiencias/PredioCotemig.webp" alt="Teste">
+                    <h1 class="tituloImg">Colégio Cotemig<br> 2019 - 2021</h1>
+                </figure>
+                <figure id="figureMolduraImg03" class="figureMolduraImg">
+                    <img id="imgExperiencias03" class="imgExperiencias" src="imgs/experiencias/LaboratorioCotemig.webp" alt="Teste">
+                    <h1 class="tituloImg">Software</h1>
+                </figure>
+            </div>
+
+            <img id="flecha02" class="flechas" src="imgs/flechas/Flecha02.webp">
+
+            <div id="divExperienciaText02" class="divExperienciaText">
+                <p id="Experiencia02" class="textDescricoesExperiencias">Ao terminar o Ensino Fundamental, já tendo anos de contato com a programação, decidi que queria algo mais sério.
+                                                                        Fui atrás de um Ensino Médio Técnico voltado para programação, e foi assim que cheguei ao 
+                                                                        <a class="links" href="https://www.cotemig.com.br/ensino/colegio-cotemig">Colégio Cotemig<a>. 
+                                                                        O lugar onde minha jornada na programação se aprofundou.
+                                                                        <br><br>
+                                                                        Durante o curso aprendi uma extensa grade curricular de formação profissional. Passei por disciplinas de 
+                                                                        Lógica de Programação, Banco de Dados, Front-End, Back-End e Mobile (Android e iOS), além de POO, Frameworks
+                                                                        e Projetos de Software. A formação também incluiu áreas de infraestrutura, como Redes, Arquitetura de Computadores
+                                                                        e Montagem e Configuração de Computadores o que me deu uma visão completa do universo da tecnologia, indo além do código.
+                </p>
+            </div>
+        </div>
+
+        <div id="divExperiencias03" class="divExperiencias">
+
+            <img id="flecha03" class="flechas" src="imgs/flechas/Flecha03.webp">
+
+            <figure id="figureMolduraImg04Mobile" class="figureMolduraImg">
+                <img id="imgExperiencias04Mobile" class="imgExperiencias" src="imgs/experiencias/PredioIzabelaHendrix.webp" alt="Teste">
+                <h1 class="tituloImg">Estágio - Izabela<br> 2020 - 2021</h1>
+            </figure>
+            <div id="divExperienciaText03" class="divExperienciaText">
+                <p id="Experiencia03" class="textDescricoesExperiencias">Em fevereiro de 2020, iniciei minha primeira experiência profissional em programação no Centro Universitário
+                                                                        Metodista Izabela Hendrix. Fui responsável pela gestão de todos os laboratórios de informática, 
+                                                                        garantindo o pleno funcionamento dos equipamentos e a disponibilidade dos softwares necessários. 
+                                                                        Atuei também no desenvolvimento de aplicações voltadas à otimização do uso dos laboratórios, 
+                                                                        proporcionando uma melhor experiência acadêmica aos alunos e professores.
+                                                                        <br><br>
+                                                                        Durante meu período de estágio, nossa equipe solucionou diversos problemas recorrentes enfrentados pelos alunos,
+                                                                        por meio de otimização e configuração de rede (Load Balancing), configuração de proxy, otimização de sistemas e implementação de melhores práticas de gestão.                                                                          
+                </p>
+
+            <div class="divPostIt">
+            <div id="redes" class="postIt">
+                <h1>Redes</h1>
+            </div>
+
+            <div id="loadBalancing" class="postIt">
+                <h2>Load<br>Balancing</h2>
+            </div>
+
+            <div id="proxy" class="postIt">
+                <h1>Proxy</h1>
+            </div>
+
+            <div id="boasPraticas" class="postIt">
+                <h2>Boas<br>práticas</h2>
+            </div>
+
+            </div>
+
+        </div>
+
+            <div id="divFiguras01" class="divFiguras">
+                <figure id="figureMolduraImg05" class="figureMolduraImg">
+                    <img id="imgExperiencias05" class="imgExperiencias" src="imgs/experiencias/PredioIzabelaHendrix.webp" alt="Teste">
+                    <h1 class="tituloImg">Estágio - Izabela<br> 2020 - 2021</h1>
+                </figure>
+                <figure id="figureMolduraImg06" class="figureMolduraImg">
+                    <img id="imgExperiencias06" class="imgExperiencias" src="imgs/experiencias/CamposIzabelaHendrix.webp" alt="Teste">
+                    <h1 class="tituloImg">Campos</h1>
+                </figure>
+            </div>
+
+        </div>
+
+        <div id="divExperiencias04" class="divExperiencias">
+
+            <img id="flecha04" class="flechas" src="imgs/flechas/Flecha04.webp"> 
+
+            <div id="divFiguras01" class="divFiguras">
+                <figure id="figureMolduraImg07" class="figureMolduraImg">
+                    <img id="imgExperiencias07" class="imgExperiencias" src="imgs/experiencias/PerolaReal01.webp" alt="Teste">
+                    <h1 class="tituloImg">PérolaReal<br> 2022 - 2024</h1>
+                </figure>
+                <figure id="figureMolduraImg08" class="figureMolduraImg">
+                    <img id="imgExperiencias08" class="imgExperiencias" src="imgs/experiencias/PerolaReal02.webp" alt="Teste">
+                    <h1 class="tituloImg">Produtos</h1>
+                </figure>
+            </div>
+
+            <div id="divExperienciaText04" class="divExperienciaText">
+                <p id="Experiencia04" class="textDescricoesExperiencias">Ao concluir meu estágio e o ensino médio, senti uma forte vontade de empreender. Identifiquei uma demanda por acessórios voltados ao público jovem,
+                                                                        conduzi uma pesquisa de mercado e elaborei um plano de negócios (ambos promissores) e foi assim que nasceu a PérolaReal (CNPJ 39.555.585/0001-41).
+                                                                        <br><br>
+                                                                        Por meio de importação direta de Shenzhen via contêiner e anúncios estratégicos em marketplaces, em pouco tempo já estava me sustentando e com os primeiros colaboradores.
+                                                                        Porém, com o passar do tempo, fui percebendo que me animava muito mais com as integrações de ERP, a criação de processos, a análise do acoplamento entre os sistemas e as possibilidades que a tecnologia oferecia do que com o negócio em si.
+                                                                        <br><br>
+                                                                        Foi aí que tomei a decisão de encerrar as operações. Percebi que tecnologia da informação era, de fato, o meu caminho.                                                                      
+                </p>
+            </div>
+
+        </div>
+
+        <div id="divExperiencias05" class="divExperiencias">
+
+            <figure id="figureMolduraImg09Mobile" class="figureMolduraImg">
+                <img id="imgExperiencias09Mobile" class="imgExperiencias" src="imgs/experiencias/Faculdade.webp" alt="Teste">
+                <h1 class="tituloImg">Faculdade<br>2024 - Cursando</h1>
+            </figure>
+
+            <div id="divExperienciaText05" class="divExperienciaText">
+                <p id="Experiencia05" class="textDescricoesExperiencias">Querendo me aprofundar mais no mundo da programação e da TI, decidi encarar o ENEM. Estudei,
+                                                                        passei e escolhi ingressar na Universidade Federal do Ceará, que tinha uma das grades curriculares mais atualizadas do país.
+                                                                        E foi assim que começou minha nova aventura no mundo tech! Aprendi e continuo aprendendo diariamente.
+                                                                        <br><br> 
+                                                                        Você pode acompanhar tudo aquilo que aprendo e faço na faculdade em meu GitHub <a href="https://github.com/leodlcg/meu-diario-de-estudos">Meu diario de estudos.</a>                      
+                </p>
+            </div>
+
+            <img id="flecha05" class="flechas" src="imgs/flechas/Flecha05.webp">
+
+            <figure id="figureMolduraImg10" class="figureMolduraImg">
+                <img id="imgExperiencias10" class="imgExperiencias" src="imgs/experiencias/Faculdade.webp" alt="Teste">
+                <h1 class="tituloImg">Faculdade<br>2024 - Cursando</h1>
+            </figure>
+        </div>
+
+        <div id="divExperiencias06"class="divExperiencias">
+
+            <img id="flecha06" class="flechas" src="imgs/flechas/Flecha06.webp">
+
+            <div class="divFiguras">
+                <figure id="figureMolduraImg11" class="figureMolduraImg">
+                    <img id="imgExperiencias11" class="imgExperiencias" src="imgs/experiencias/MeuAmigoPerroEventos.webp" alt="Teste">
+                    <h1 class="tituloImg">Eventos</h1>
+                </figure>
+                <figure id="figureMolduraImg12" class="figureMolduraImg">
+                    <img id="imgExperiencias12" class="imgExperiencias" src="imgs/experiencias/MeuAmigoPerro.webp" alt="Teste">
+                    <h1 class="tituloImg">MeuAmigoPerro<br> 2025</h1>
+                </figure>
+                <figure id="figureMolduraImg13" class="figureMolduraImg">
+                    <img id="imgExperiencias13" class="imgExperiencias" src="imgs/experiencias/MeuAmigoPerrCaotinho.webp" alt="Teste">
+                    <h1 class="tituloImg">Ações</h1>
+                </figure>
+            </div>
+
+            <div id="divExperienciaText06" class="divExperienciaText">
+                <p id="Experiencia06" class="textDescricoesExperiencias">Após um ano de faculdade e muito conteúdo absorvido, percebi que alguns animais frequentavam o campus da universidade de forma permanente e nenhum projeto sequer os notava.
+                                                                         Com experiência em gestão e desenvolvimento, resolvi junto a amigos criar um projeto de extensão que pudesse ajudá-los através da tecnologia.
+                                                                        <br><br> 
+                                                                        Assim surgiu o MeuAmigoPerro. Uma organização do terceiro setor voltada ao desenvolvimento de aplicações que enfrentam os desafios vividos pelos animais em situação de rua.
+                                                                        <br><br>
+                                                                        Você pode acompanhar nosso desenvolvimento e trajetória em nosso instagram <a href="https://www.instagram.com/meuamigoperro/">@meuamigoperro</a>                                                  
+                </p>
+            </div>
+        </div>
+
+        <div id="divExperiencias07"class="divExperiencias">
+
+            <div class="divFiguras">
+                <figure id="figureMolduraImg14" class="figureMolduraImg">
+                    <img id="imgExperiencias14" class="imgExperiencias" src="imgs/experiencias/Interrogacao.webp" alt="Teste">
+                    <h1 class="tituloImg">Você</h1>
+            </div>
+
+            <div id="divExperienciaText07" class="divExperienciaText">
+                <p id="Experiencia07" class="textDescricoesExperiencias">Que tal preenchermos essa experiência juntos? </a>                                                      
+                </p>
+            </div>
+
+        </div>
+
+    </section>
 
     <footer id="rodape"> 
 
-
-
-        <p id="textRodape">Aqui sera o rodape</p>
+        <p class="textDescricoes">Aqui sera o rodape</p>
 
     </footer>
 
+<script src="javascript/intersectionObserver.js"></script>
+<script src="javascript/graphStack.js"></script>
 </body>
 </html>

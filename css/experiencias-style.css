@@ -1,0 +1,397 @@
+/* ============================================================
+   VARIÁVEIS GLOBAIS
+   ============================================================ */
+:root {
+    --font-handwritten: "Indie Flower", cursive;
+    --font-mono: "Roboto Mono", monospace;
+
+    --border-card: 10px solid white;
+    --radius-card: 30px;
+    --radius-img: 20px;
+
+    --margin-section-lg: 200px;
+    --margin-section-md: 170px;
+    --margin-section-sm: 50px;
+
+    --text-color-primary: white;
+    --text-color-card: black;
+
+    --font-size-text: 25px;
+    --line-height-text: 35px;
+}
+
+/* ============================================================
+   SECTION PRINCIPAL
+   ============================================================ */
+#experienciasSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+    scroll-margin-top: 200px;
+}
+
+/* ============================================================
+   DIVS DE EXPERIÊNCIAS
+   ============================================================ */
+.divExperiencias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
+}
+
+#divExperiencias01-01{
+
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: 200px;
+
+}
+
+#divExperiencias02,
+#divExperiencias06,
+#divExperiencias07 {
+    flex-direction: column;
+}
+
+#divExperiencias02{
+
+    margin-top: 250px;
+
+}
+
+#divExperiencias03 {
+    margin-top: var(--margin-section-lg);
+}
+
+#divExperiencias04,
+#divExperiencias05 {
+    margin-top: var(--margin-section-md);
+}
+
+#divExperiencias06 {
+    margin-top: 370px;
+}
+
+#divExperiencias07 {
+    margin-top: 130px;
+}
+
+/* ============================================================
+   FIGURAS E IMAGENS
+   ============================================================ */
+.divFiguras {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+#divFiguras01 {
+    flex-direction: column;
+}
+
+.figureMolduraImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background-color: white;
+    border: var(--border-card);
+    border-radius: var(--radius-card);
+    margin: clamp(0px, 0.5vw, 10px);
+}
+
+/* Imagens com offset vertical */
+#figureMolduraImg01,
+#figureMolduraImg03,
+#figureMolduraImg11,
+#figureMolduraImg13 {
+    margin-top: 80px;
+}
+
+/* Imagens mobile: ocultas por padrão */
+#figureMolduraImg04Mobile,
+#figureMolduraImg09Mobile {
+    display: none;
+}
+
+.imgExperiencias {
+    width: auto;
+    height: auto;
+    border-radius: var(--radius-img);
+}
+
+#imgExperiencias01-01{
+
+    width: 600px;
+    height: 250px;
+
+}
+
+#imgExperiencias01-02{
+
+    width: 600px;
+    height: 150px;
+
+}
+
+/* ============================================================
+   ESTRELAS
+   ============================================================ */
+
+.estrelas{
+
+    position: absolute;
+
+}
+
+#imgEstrela01{
+
+    margin-bottom: 600px;
+    margin-left: 600px;
+    transform: rotate(10deg);
+
+}
+
+#imgEstrela02{
+
+    margin-top: 780px;
+    margin-right: 700px;
+    transform: rotate(10deg);
+
+}
+
+
+
+/* ============================================================
+   FLECHAS
+   ============================================================ */
+.flechas {
+    position: absolute;
+    width: auto;
+}
+
+#flecha01 {
+
+    height: 950px;
+    margin-top: 885px;
+    margin-right: clamp(0px, 80vw, 900px);
+
+}
+
+#flecha02 {
+    height: 800px;
+    margin-top: 1200px;
+    margin-left: clamp(0px, 80vw, 1250px);
+}
+
+#flecha03 {
+    height: 1040px;
+    margin-top: 840px;
+    margin-right: clamp(0px, 80vw, 1410px);
+}
+
+#flecha04 {
+    height: 800px;
+    margin-top: 1150px;
+    margin-left: clamp(0px, 80vw, 1300px);
+}
+
+#flecha05 {
+    height: 700px;
+    margin-top: 870px;
+    margin-right: clamp(0px, 80vw, 1100px);
+}
+
+#flecha06 {
+    height: 500px;
+    margin-top: 1250px;
+    margin-left: clamp(0px, 80vw, 830px);
+}
+
+#teste {
+    height: 500px;
+    margin-top: 450px;
+    transform: rotate(180deg);
+    margin-left: clamp(0px, 80vw, 1250px);
+}
+
+/* ============================================================
+   TÍTULOS E TEXTOS
+   ============================================================ */
+.tituloImg {
+    font-family: var(--font-handwritten);
+    text-align: center;
+    color: var(--text-color-card);
+}
+
+.textDescricoesExperiencias {
+    text-align: justify;
+    font-family: var(--font-mono);
+    font-size: var(--font-size-text);
+    line-height: var(--line-height-text);
+    color: var(--text-color-primary);
+}
+
+#Experiencia01 { margin-left: clamp(0px, 2vw, 100px); }
+#Experiencia03 { margin-right: clamp(0px, 2vw, 100px); }
+#Experiencia04 { margin-left: clamp(0px, 2vw, 100px); }
+#Experiencia05 { margin-right: clamp(0px, 2vw, 100px); }
+
+/* ============================================================
+   DIVS DE TEXTO
+   ============================================================ */
+.divExperienciaText {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#divExperienciaText01,
+#divExperienciaText05 {
+    width: clamp(0px, 95vw, 750px);
+}
+
+#divExperienciaText02,
+#divExperienciaText03,
+#divExperienciaText04,
+#divExperienciaText06,
+#divExperienciaText07 {
+    width: clamp(0px, 95vw, 1000px);
+}
+
+#divExperienciaText01,
+#divExperienciaText03{
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ============================================================
+   LINKS
+   ============================================================ */
+.linksExperiencias {
+    border-radius: 4px;
+    padding: 15px;
+}
+
+/* Classes utilitárias de alinhamento — use no HTML no lugar dos IDs */
+.text-left   { display: block; text-align: left; }
+.text-center { display: block; text-align: center; }
+.text-right  { display: block; text-align: right; }
+
+/* Mantidos para compatibilidade com o HTML atual */
+#saibaMais01 { display: block; }
+#saibaMais02 { display: block; text-align: center; }
+#saibaMais03 { display: block; text-align: right; }
+#saibaMais04 { display: block; text-align: start; }
+#saibaMais05 { display: block; text-align: center; }
+#saibaMais06 { display: block; text-align: center; }
+
+/* ============================================================
+   MEDIA QUERIES
+   ============================================================ */
+
+/* --- Abaixo de 1400px: oculta flechas --- */
+@media (max-width: 1400px) {
+    .flechas { display: none; }
+}
+
+/* --- Abaixo de 900px: layouts em coluna e imagens mobile --- */
+@media (max-width: 900px) {
+    #divExperiencias01,
+    #divExperiencias03,
+    #divExperiencias04,
+    #divExperiencias05 {
+        flex-direction: column;
+    }
+
+    /* Oculta imagens desktop, exibe versões mobile */
+    #figureMolduraImg01,
+    #figureMolduraImg03,
+    #figureMolduraImg04,
+    #figureMolduraImg05,
+    #figureMolduraImg06,
+    #figureMolduraImg07,
+    #figureMolduraImg10,
+    #figureMolduraImg11,
+    #figureMolduraImg13 {
+        display: none;
+    }
+
+    #figureMolduraImg04Mobile,
+    #figureMolduraImg09Mobile {
+        display: flex;
+    }
+}
+
+/* --- Abaixo de 819px: margens menores e textos centralizados --- */
+@media (max-width: 819px) {
+    #divExperiencias02,
+    #divExperiencias03,
+    #divExperiencias04,
+    #divExperiencias05,
+    #divExperiencias06 {
+        margin-top: var(--margin-section-sm);
+    }
+
+    .divExperienciaText {
+        flex-wrap: wrap;
+        width: 90%;
+        min-width: 0;
+    }
+
+    #Experiencia01 { margin-left: 0; }
+    #Experiencia03,
+    #Experiencia04,
+    #Experiencia05,
+    #Experiencia06 { margin-right: 0; }
+
+    #saibaMais01,
+    #saibaMais03 { text-align: center; }
+}
+
+/* --- Abaixo de 800px: fonte menor --- */
+@media (max-width: 800px) {
+    .textDescricoesExperiencias { font-size: 18px; }
+}
+
+/* --- Abaixo de 400px: fonte ainda menor --- */
+@media (max-width: 400px) {
+    .textDescricoesExperiencias { font-size: 15px; }
+}
+
+.divPostIt{
+
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-all;
+    gap: 50px;
+    margin-top: 50px;
+
+}
+
+.postIt{
+
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    line-height: 30px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.479);
+}
+
+
+#redes{background-color: #FFD2A9; transform: rotate(2deg); margin-top: 30px;}
+
+#loadBalancing{background-color: #C4FFA9; width: 220px; transform: rotate(-5deg); margin-top: -10px;}
+
+#proxy{background-color: #E0A6F4; transform: rotate(3deg);}
+
+#boasPraticas{background-color: #9BDBFF; transform: rotate(-2deg); margin-top: -10px;}

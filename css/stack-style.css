@@ -1,0 +1,247 @@
+#stackSection{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  scroll-margin-top: 50px;
+
+}
+
+.stacksDiv{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+
+}
+
+@media (max-width: 1850px) { /* Tela pequena*/
+  .stacksDiv {
+    width: 100%;
+  }
+}
+
+.stacksDiv .retanguloFundoCor{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: clamp(360px, 50vw, 420px);
+  height: 500px;
+  margin: 30px 30px; /* margem vertical (cima e baixo): 10px margem horizontal (esquerda e direita): 30px */
+  transition: 0.5s;
+
+}
+
+@media (max-width:334px) {
+
+.stacksDiv .retanguloFundoCor{
+
+  margin: 70px 30px;
+ 
+}
+  
+}
+
+.stacksDiv .retanguloFundoCor::before{
+
+  content:' ';
+  position: absolute;
+  width: 55%; /* largura inicial menor, cresce dos dois lados */
+  height: 100%;
+  left: 50%; /* âncora no centro */
+  border-radius: 8px;
+  transition: 0.5s;
+  transform: translateX(-50%); /* centraliza o pseudo-elemento */
+
+}
+
+.stacksDiv .retanguloFundoCor:hover:before,
+.stacksDiv .retanguloFundoCor:hover:after{
+
+  width: 80%; /* expande igualmente para esquerda e direita */
+
+}
+
+.stacksDiv .retanguloFundoCor:nth-child(1):before,
+.stacksDiv .retanguloFundoCor:nth-child(1):after{
+
+  background: linear-gradient(315deg, #FF6D00, #E53935)
+
+}
+
+.stacksDiv .retanguloFundoCor:nth-child(2):before,
+.stacksDiv .retanguloFundoCor:nth-child(2):after{
+
+  background: linear-gradient(315deg, #FFD700, #FF6B35)
+
+}
+
+.stacksDiv .retanguloFundoCor:nth-child(3):before,
+.stacksDiv .retanguloFundoCor:nth-child(3):after{
+
+  background: linear-gradient(315deg, #1565C0, #00BCD4)
+
+}
+
+.stacksDiv .retanguloFundoCor:nth-child(4):before,
+.stacksDiv .retanguloFundoCor:nth-child(4):after{
+
+  background: linear-gradient(315deg, #D50000, #FF4081)
+
+}
+
+.stacksDiv .retanguloFundoCor:nth-child(5):before,
+.stacksDiv .retanguloFundoCor:nth-child(5):after{
+
+  background: linear-gradient(315deg, #4dff03, #00d0ff)
+
+}
+
+.stacksDiv .retanguloFundoCor:nth-child(6):before,
+.stacksDiv .retanguloFundoCor:nth-child(6):after{
+
+  background: linear-gradient(315deg, #85B7EB, #378ADD)
+
+}
+
+.stacksDiv .retanguloFundoCor .conteudoBox{
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 0px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  backdrop-filter: blur(5px); /* blur da cor do fundo */
+  border-radius: 20px;
+  z-index: 1;
+  transition: 0.5s;
+
+}
+
+.stacksDiv .retanguloFundoCor:hover .conteudoBox{
+
+  padding: 50px 30px;
+
+}
+
+.stacksDiv .retanguloFundoCor .conteudoBox h2{
+
+  font-size: clamp(15px, 8vmin, 30px);
+  color: #fff;
+  line-height: 50px;
+
+}
+
+.stacksDiv .retanguloFundoCor .conteudoBox p{
+
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+  line-height: 40px;
+
+}
+
+.stacksDiv .retanguloFundoCor .conteudoBox a{
+
+  display: table;
+  text-align: left;
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 20px;
+
+}
+
+@keyframes animacaoCima{
+
+  0%   { transform: translate(-30%, -30%) translate(0px, 0px); }
+  25%  { transform: translate(-30%, -30%) translate(6px, -8px); }
+  50%  { transform: translate(-30%, -30%) translate(-7px, 5px); }
+  75%  { transform: translate(-30%, -30%) translate(8px, 7px); }
+  100% { transform: translate(-30%, -30%) translate(0px, 0px); }
+
+}
+
+@keyframes animacaoBaixo{
+
+  0%   { transform: translate(20%, 20%) translate(0px, 0px); }
+  25%  { transform: translate(20%, 20%) translate(-8px, 6px); }
+  50%  { transform: translate(20%, 20%) translate(5px, -7px); }
+  75%  { transform: translate(20%, 20%) translate(-6px, -8px); }
+  100% { transform: translate(20%, 20%) translate(0px, 0px); }
+
+}
+
+.miniBoxCima{
+
+  display: flex;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0; /* Deixar o mini na lateral correta */
+  left: 0; /* Deixar o mini na lateral correta */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 8px;
+  transform: translate(-30%, -30%) scale(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+
+}
+
+.miniBoxBaixo{
+
+  display: flex;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 0; /* Deixar o mini na lateral correta */
+  right: 0; /* Deixar o mini na lateral correta */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 8px;
+  transform: translate(20%, 20%) scale(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+
+}
+
+.stacksDiv .retanguloFundoCor:hover .miniBoxCima{
+
+  opacity: 1;
+  transform: translate(-30%, -30%) scale(1);
+  animation: animacaoCima 3s ease-in-out 0.4s infinite;
+
+}
+
+.stacksDiv .retanguloFundoCor:hover .miniBoxBaixo{
+
+  opacity: 1;
+  transform: translate(20%, 20%) scale(1);
+  animation: animacaoBaixo 3s ease-in-out 0.4s infinite;
+
+}
+
+.imgConteudo{
+
+  display: flex;
+  align-items: center;
+
+}
+
+.imgStack{
+  
+  width: 100px;
+  height: auto;
+
+}
+

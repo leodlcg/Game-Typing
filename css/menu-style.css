@@ -1,0 +1,60 @@
+#menu{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* centraliza verticalmente */
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+
+}
+
+.menuNav{
+
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  gap: clamp(8px, 6vw, 96px);
+  padding: 8px 4px 40px; /* padding-bottom compensa o clip-path */
+  background: linear-gradient(135deg, #03030a, #1a4fa0);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 70%,
+    95% 85%,
+    85% 65%,
+    75% 90%,
+    65% 70%,
+    50% 95%,
+    35% 68%,
+    25% 88%,
+    15% 62%,
+    5% 82%,
+    0% 68%
+    );
+
+}
+
+.linkMenu{
+
+  text-decoration: none;
+  font-family: "Matemasie", sans-serif;
+  font-size: clamp(15px, 3vmin, 24px); /* mínimo, fluido, máximo */
+  font-weight: 700;
+  color: #deefdf;
+  transition: transform 0.2s;
+
+}
+
+.linkMenu.active{
+                
+  border-bottom: 5px solid black;
+  transform: scale(1.1); /* opcional: deixa levemente maior */
+  
+}
+
