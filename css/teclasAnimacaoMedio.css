@@ -1,0 +1,225 @@
+.animacaoimgTeclaMedio11 {
+  animation-name: animacaoimgTeclaMedio1;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.animacaoimgTeclaMedio12 {
+  animation-name: animacaoimgTeclaMedio1;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.animacaoimgTeclaMedio13 {
+  animation-name: animacaoimgTeclaMedio1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+/* Estilo de ataque 01; */
+@keyframes animacaoimgTeclaMedio1 {  
+  0%   {left:85%; bottom: 15%;}
+  10%  {left:77.78%; bottom: 20%;} /*85% - 7,22 */
+  20%  {left:70.56%; bottom: 25%;} /*77,78% - 7,22 */
+  30%  {left:63.34%; bottom: 30%;} /*70,56% - 7,22 */
+  40%  {left:56.12%; bottom: 35%;} /* MEIO DA ANIMACAO PARA O TARGET! ASSIM 85(SAIDA LEFT NO INIMIGO) - 20(LEFT DO TARGET) =  65/9 (9 = QUANTIDADE DE ANIMACOES ATE O TARGET) = 7,22 (O QUE DEVO SUBTRAIR DE CADA ANIMACAO LEFT!) */ 
+  50%  {left:48.9; bottom: 32.5%;} /* Vai diminuindo... */
+  60%  {left:41.68%; bottom: 30%;}
+  70%  {left:34.46%; bottom: 25%;}
+  80%  {left:27.24%;  bottom: 20%;}
+  90%  {left:20%; bottom: 15%;} /* TARGET FICA EM left:20%; bottom: 15% */
+  95%  {left:13%; bottom: 15%;} /*PARA IR DO TARGET ATE O HEROI */
+  100% {left:7%; bottom: 15%;}
+}
+
+.animacaoimgTeclaMedio21 {
+  animation-name: animacaoimgTeclaMedio2;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.animacaoimgTeclaMedio22 {
+  animation-name: animacaoimgTeclaMedio2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.animacaoimgTeclaMedio23 {
+  animation-name: animacaoimgTeclaMedio2;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+/* Estilo de ataque 02; */
+@keyframes animacaoimgTeclaMedio2 {  
+  0%   {left:85%; bottom: 15%;}
+  10%  {left:77.78%; bottom: 14%;} 
+  20%  {left:70.56%; bottom: 13%;} 
+  30%  {left:63.34%; bottom: 12%;} 
+  40%  {left:56.12%; bottom: 11%;} 
+  50%  {left:48.9; bottom: 11,5%;} 
+  60%  {left:41.68%; bottom: 12%;}
+  70%  {left:34.46%; bottom: 13%;}
+  80%  {left:27.24%;  bottom: 14%;}
+  90%  {left:20%; bottom: 15%;} 
+  95%  {left:13%; bottom: 15%;}
+  100% {left:7%; bottom: 15%;}
+}
+
+.animacaoimgTeclaMedio31 {
+  animation-name: animacaoimgTeclaMedio3;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.animacaoimgTeclaMedio32 {
+  animation-name: animacaoimgTeclaMedio3;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.animacaoimgTeclaMedio33 {
+  animation-name: animacaoimgTeclaMedio3;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+/* Estilo de ataque 03; */
+@keyframes animacaoimgTeclaMedio3 {  
+  from { left: 85%; }
+  to { left: 7%; }
+}
+
+/* ======================================================== */
+
+.animacaoimgTeclaMedio41 {
+  animation-name: animacaoimgTeclaMedio4;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.animacaoimgTeclaMedio42 {
+  animation-name: animacaoimgTeclaMedio4;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.animacaoimgTeclaMedio43 {
+  animation-name: animacaoimgTeclaMedio4;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+/* Estilo de ataque 04; */
+@keyframes animacaoimgTeclaMedio4 {  
+  0%   {left:85%; bottom: 15%;}
+  10%  {left:77.78%; bottom: 25%;}
+  20%  {left:70.56%; bottom: 15%;}
+  30%  {left:63.34%; bottom: 25%;} 
+  40%  {left:56.12%; bottom: 15%;} 
+  50%  {left:48.9; bottom: 25%;} 
+  60%  {left:41.68%; bottom: 15%;}
+  70%  {left:34.46%; bottom: 25%;}
+  80%  {left:27.24%;  bottom: 20%;}
+  90%  {left:20%; bottom: 15%;} /* TARGET FICA EM left:20%; bottom: 15% */
+  95%  {left:13%; bottom: 15%;} /*PARA IR DO TARGET ATE O HEROI */
+  100% {left:7%; bottom: 15%;}
+}
+
+.animacaoimgTeclaMedio51 {
+  animation-name: animacaoimgTeclaMedio5;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.animacaoimgTeclaMedio52 {
+  animation-name: animacaoimgTeclaMedio5;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.animacaoimgTeclaMedio53 {
+  animation-name: animacaoimgTeclaMedio5;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+/* Estilo de ataque 05; */
+@keyframes animacaoimgTeclaMedio5 {  
+  0%   {left:85%; bottom: 15%;}
+  10%  {left:77.78%; bottom: 25%;} /*85% - 7,22 */
+  20%  {left:70.56%; bottom: 30%;} /*77,78% - 7,22 */
+  30%  {left:63.34%; bottom: 35%;} /*70,56% - 7,22 */
+  40%  {left:56.12%; bottom: 30%;} /* MEIO DA ANIMACAO PARA O TARGET! ASSIM 85(SAIDA LEFT NO INIMIGO) - 20(LEFT DO TARGET) =  65/9 (9 = QUANTIDADE DE ANIMACOES ATE O TARGET) = 7,22 (O QUE DEVO SUBTRAIR DE CADA ANIMACAO LEFT!) */ 
+  50%  {left:48.9; bottom: 25%;} /* Vai diminuindo... */
+  60%  {left:41.68%; bottom: 10%;}
+  70%  {left:34.46%; bottom: 25%;}
+  80%  {left:27.24%;  bottom: 20%;}
+  90%  {left:20%; bottom: 15%;} /* TARGET FICA EM left:20%; bottom: 15% */
+  95%  {left:13%; bottom: 15%;} /*PARA IR DO TARGET ATE O HEROI */
+  100% {left:7%; bottom: 15%;}
+}
+
+.animacaoimgTeclaMedio61 {
+  animation-name: animacaoimgTeclaMedio6;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.animacaoimgTeclaMedio62 {
+  animation-name: animacaoimgTeclaMedio6;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.animacaoimgTeclaMedio63 {
+  animation-name: animacaoimgTeclaMedio6;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+/* Estilo de ataque 06; */
+@keyframes animacaoimgTeclaMedio6 {  
+  0%   {left:85%; bottom: 15%;}
+  10%  {left:77.78%; bottom: 10%;} /*85% - 7,22 */
+  20%  {left:70.56%; bottom: 5%;} /*77,78% - 7,22 */
+  30%  {left:63.34%; bottom: 10%;} /*70,56% - 7,22 */
+  40%  {left:56.12%; bottom: 15%;} /* MEIO DA ANIMACAO PARA O TARGET! ASSIM 85(SAIDA LEFT NO INIMIGO) - 20(LEFT DO TARGET) =  65/9 (9 = QUANTIDADE DE ANIMACOES ATE O TARGET) = 7,22 (O QUE DEVO SUBTRAIR DE CADA ANIMACAO LEFT!) */ 
+  50%  {left:48.9; bottom: 20%;} /* Vai diminuindo... */
+  60%  {left:41.68%; bottom: 25%;}
+  70%  {left:34.46%; bottom: 20%;}
+  80%  {left:27.24%;  bottom: 15%;}
+  90%  {left:20%; bottom: 15%;} /* TARGET FICA EM left:20%; bottom: 15% */
+  95%  {left:13%; bottom: 15%;} /*PARA IR DO TARGET ATE O HEROI */
+  100% {left:7%; bottom: 15%;}
+}
